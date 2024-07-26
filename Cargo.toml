@@ -1,0 +1,15 @@
+[package]
+name = "coppybara"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
+
+[dependencies]
+indicatif = "0.16"
+clap = { version = "4.0", features = ["derive"] }
